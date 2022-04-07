@@ -7,5 +7,5 @@ The main difference from original GCN is the edge features is normalized by _dou
 | Model      | Results |
 | ----------- | ----------- |
 | Paper      | 81.80    |
-|This version |81.50|
+|This version |**83.20**|
 
