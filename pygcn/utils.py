@@ -5,7 +5,7 @@ import torch
 def doubly_stochastic_norm(adj):
     row = adj / (adj.sum(1) + 1e-6)
     col = adj / (adj.sum(0) + 1e-6)
-    res = np.einsum("ij, kj -> ik", row, col)
+    res = np.einsum("ij, ij -> ij", row, col)
     del row
     del col
     return res
